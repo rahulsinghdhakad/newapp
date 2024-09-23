@@ -1,0 +1,77 @@
+@media screen and (max-aspect-ratio:2){
+    .intro{
+        height: 100vh;
+        video{
+            margin-top: 0%;
+            height: 100vh;
+            object-fit: cover;
+        }
+        div{
+            height: inherit;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    footer{
+        padding: 2rem;
+        grid-template-columns: 1fr;
+        h1{
+            text-align: center;
+            font-size: 2.5rem;
+            padding: 1rem;
+        }
+        aside{
+            align-items: center;
+            a{
+                line-height: 2rem;
+            }
+        }
+        div{
+            padding: 0;
+            align-items: center;
+            &:last-of-type{
+                align-items: center;
+            }
+        }
+        p{
+            bottom: 1%;
+        }
+    }
+    
+    .franchiseBtn{
+        padding: 0.5rem;
+        top:unset;
+        right: unset;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        &:hover{
+            transform: translateX(-50%) skew(-10deg);
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    footer{
+        padding: 1rem 0;
+        h1{
+            font-size: 2rem;
+        }
+        aside{
+            font-size: 1.5rem;
+        }
+        p{
+            left: 0%;
+            transform: translateX(10%);
+            font-size: 0.8rem;
+        }
+    }
+    .section{
+        >div{
+            padding: 1rem ;
+            min-height: 100vh;
+        }
+    }
+    
+}

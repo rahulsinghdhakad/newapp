@@ -1,0 +1,47 @@
+@import 'colors';
+
+.section{
+    margin-top: 0px;
+
+    > div{
+        margin: auto;
+        max-width: 48rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 120vh;
+        padding: 20px ;
+        justify-content: space-evenly;
+        box-sizing: border-box;
+        text-align: center;
+        h3{
+            font-size: 2rem;
+            font-family: $heading;
+            font-weight:200;
+        }
+        p{
+            font-size: 1.2rem;
+            font-family: $text;
+            line-height: 1.2rem;
+        }
+        button{
+            width: 80%;
+            padding: 10px;
+            font:500 1.2rem $heading;
+            letter-spacing: 2px;
+            border: none;
+            transition: transform 0.5s;
+            transform-origin: bottom;
+            &:hover{
+                transform: skewX(-15deg);
+            }
+        }
+    
+        img{
+            width: 100%;
+        }
+    }
+
+
+}
+
